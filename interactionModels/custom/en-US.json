@@ -1,0 +1,59 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "template sixteen",
+      "intents": [
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "WhatIsMyNameIntent",
+          "slots": [],
+          "samples": [
+            "tell me my name",
+            "what is my name",
+            "whats my name"
+          ]
+        },
+        {
+          "name": "WhatIsMyEmailIntent",
+          "slots": [],
+          "samples": [
+            "tell me my email",
+            "tell me my email address",
+            "what is my email address",
+            "what is me email"
+          ]
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "3"
+}

@@ -1,0 +1,63 @@
+{
+    "SKILL_NAME": "the Dabble Lab starter template",
+    "GREETING_UNKNOWN_USER": [
+      "Welcome to {}. You need to link your account to continue. Please go to your Alexa app and complete the account linking process."
+    ],
+    "GREETING_UNKNOWN_USER_REPROMPT": [
+      "Please go to your Alexa app and complete the account linking process."
+    ],
+    "GREETING": [
+      "Hello {}. Your account is linked with the skill. You can ask me your name or email id to confirm this."
+    ],
+    "GREETING_REPROMPT": [
+      "You can ask me your name or email id"
+    ],
+    "TELL_NAME": [
+      "Your name is {}."
+    ],
+    "TELL_NAME_REPROMPT": [
+      "What else would you like to know?"
+    ],
+    "TELL_EMAIL": [
+      "Your email is {}."
+    ],
+    "TELL_EMAIL_REPROMPT": [
+      "What else would you like to know?"
+    ],
+    "LINK_ACCOUNT_NAME": [
+      "I cannot access your name since your account is not linked with the skill. To link your account, I've sent a card to your Alexa companion app. Please go to your Alexa app and complete the account linking process to continue."
+    ],
+    "LINK_ACCOUNT_NAME_REPROMPT": [
+      "Please go to your Alexa app and complete the account linking process"
+    ],
+    "LINK_ACCOUNT_EMAIL": [
+      "I cannot access your email since your account is not linked with the skill. To link your account, I've sent a card to your Alexa companion app. Please go to your Alexa app and complete the account linking process to continue."
+    ],
+    "LINK_ACCOUNT_EMAIL_REPROMPT": [
+      "Please go to your Alexa app and complete the account linking process"
+    ],
+    "REPEAT": [
+      "I said... {}"
+    ],
+    "REPEAT_REPROMPT": [
+      "{}"
+    ],
+    "HELP": [
+      "You can tell me your name, or say learn more, to learn more about this skill."
+    ],
+    "HELP_REPROMPT": [
+      "What is your name?"
+    ],
+    "FALLBACK": [
+      "Sorry, I didn't understand that. You can tell me your name, or say learn more, to learn more about this skill."
+    ],
+    "FALLBACK_REPROMPT": [
+      "You can tell me your name, or say learn more, to learn more about this skill."
+    ],
+    "CANCEL_STOP_RESPONSE": [
+      "Good bye",
+      "Okay. I'll be here if you need me."
+    ],
+    "ERROR": "Sorry, I wasn't able to handle your last request. Could you say that again?",
+    "ERROR_REPROMPT": "Could you say that again?"
+}
