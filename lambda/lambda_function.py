@@ -61,11 +61,12 @@ class LaunchRequestHandler(AbstractRequestHandler):
 class WhatIsMyNameIntentHandler(AbstractRequestHandler):
     
     def can_handle(self, handler_input):
-        return is_intent_name("WhatsMyNameIntent")(handler_input)
+        return is_intent_name("WhatIsMyNameIntent")(handler_input)
     
     def handle(self, handler_input):
         language_prompts = handler_input.attributes_manager.request_attributes["_"]
         account_linking_token = get_account_linking_access_token(handler_input)
+        skill_name = language_prompts["SKILL_NAME"]
         
         if account_linking_token is not None:
             url = "https://api.amazon.com/user/profile?access_token={}".format(account_linking_token)
@@ -90,11 +91,12 @@ class WhatIsMyNameIntentHandler(AbstractRequestHandler):
 class WhatIsMyEmailIntentHandler(AbstractRequestHandler):
     
     def can_handle(self, handler_input):
-        return is_intent_name("WhatsMyEmailIntent")(handler_input)
+        return is_intent_name("WhatIsMyEmailIntent")(handler_input)
     
     def handle(self, handler_input):
         language_prompts = handler_input.attributes_manager.request_attributes["_"]
         account_linking_token = get_account_linking_access_token(handler_input)
+        skill_name = language_prompts["SKILL_NAME"]
         
         if account_linking_token is not None:
             url = "https://api.amazon.com/user/profile?access_token={}".format(account_linking_token)
@@ -272,8 +274,8 @@ class RepeatInterceptor(AbstractResponseInterceptor):
 
 sb = SkillBuilder()
 sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(WhatIsMyNameIntent())
-sb.add_request_handler(WhatIsMyEmailIntent())
+sb.add_request_handler(WhatIsMyNameIntentHandler())
+sb.add_request_handler(WhatIsMyEmailIntentHandler())
 sb.add_request_handler(RepeatIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(HelpIntentHandler())

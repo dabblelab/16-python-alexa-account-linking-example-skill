@@ -10,7 +10,7 @@
             "Alexa launch template sixteen"
           ],
           "keywords": [],
-          "name": "Template Sixteen",
+          "name": "Template sixteen",
           "description": "Sample Full Description",
           "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
           "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
@@ -27,23 +27,23 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "arn:aws:lambda:us-east-1:415528003195:function:d625d818-fd60-4574-a3e6-1fe041f53e82:Release_0"
+          "uri": "arn:aws:lambda:us-east-1:415528003195:function:8d815589-593d-4eac-b55e-69b4958977ec:Release_0"
         },
         "interfaces": [],
         "regions": {
           "EU": {
             "endpoint": {
-              "uri": "arn:aws:lambda:eu-west-1:415528003195:function:d625d818-fd60-4574-a3e6-1fe041f53e82:Release_0"
+              "uri": "arn:aws:lambda:eu-west-1:415528003195:function:8d815589-593d-4eac-b55e-69b4958977ec:Release_0"
             }
           },
           "NA": {
             "endpoint": {
-              "uri": "arn:aws:lambda:us-east-1:415528003195:function:d625d818-fd60-4574-a3e6-1fe041f53e82:Release_0"
+              "uri": "arn:aws:lambda:us-east-1:415528003195:function:8d815589-593d-4eac-b55e-69b4958977ec:Release_0"
             }
           },
           "FE": {
             "endpoint": {
-              "uri": "arn:aws:lambda:us-west-2:415528003195:function:d625d818-fd60-4574-a3e6-1fe041f53e82:Release_0"
+              "uri": "arn:aws:lambda:us-west-2:415528003195:function:8d815589-593d-4eac-b55e-69b4958977ec:Release_0"
             }
           }
         }
